@@ -26,10 +26,7 @@ class Warrior : public Character{
     int health;
 
     public:
-    Warrior(string n,int h){
-        name =n;
-        health=h;
-    }
+    Warrior(string n,int h):Character(n,h){}
 
     void useAbility() override{
         cout<<"[warrior] swings a massive claymore!"<<"\n";
@@ -42,9 +39,7 @@ class Mage: public Character{
     public:
     string name;
     int health;
-    Mage(string n,int h){
-        name=n;
-        health=h;
+    Mage(string n,int h):Character(n,h){
 
     }
 
@@ -59,7 +54,7 @@ class Rogue: public Character{
     int health;
 
     public:
-    Rogue(string n, int h){
+    Rogue(string n, int h):Character(n,h){
         name=n;
         health=h;
     }
