@@ -1,0 +1,24 @@
+# --- C++ Compiled Binaries & Objects ---
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+a.out
+
+# --- Build Folders (CMake, Make, etc.) ---
+build/
+bin/
+obj/
+Debug/
+Release/
+
+# --- IDE Settings (VS Code) ---
+.vscode/
+
+# --- Operating System Junk ---
+.DS_Store
+Thumbs.db
+*~
